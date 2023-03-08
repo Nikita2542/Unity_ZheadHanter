@@ -5085,103 +5085,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1498908340
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1498908344}
-  - component: {fileID: 1498908343}
-  - component: {fileID: 1498908342}
-  - component: {fileID: 1498908341}
-  m_Layer: 0
-  m_Name: nikich
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1498908341
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498908340}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1498908342
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498908340}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1498908343
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498908340}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1498908344
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498908340}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.201458, y: 6.083767, z: 8.889805}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1553967718 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5838419166506332812, guid: 2647a2b9f15240b4090e711e2af68ed6, type: 3}
@@ -6800,15 +6703,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5236798115310363059, guid: 99d4ab43af4d15644add42f85612d829, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 9.938702e-32
+      value: 1.05e-43
       objectReference: {fileID: 0}
     - target: {fileID: 5236798115310363059, guid: 99d4ab43af4d15644add42f85612d829, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 19.200005
+      value: 1.0596762e-38
       objectReference: {fileID: 0}
     - target: {fileID: 5236798115310363059, guid: 99d4ab43af4d15644add42f85612d829, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 8.8
+      value: 170
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99d4ab43af4d15644add42f85612d829, type: 3}
@@ -7094,11 +6997,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2374999745703473244, guid: 78c531063dcccc64fa2d1b70ba68855f, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 8.756523e+20
+      value: 5.8936948e+20
       objectReference: {fileID: 0}
     - target: {fileID: 2374999745703473244, guid: 78c531063dcccc64fa2d1b70ba68855f, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 7.19e-43
+      value: 8.25e-43
       objectReference: {fileID: 0}
     - target: {fileID: 2374999745703473244, guid: 78c531063dcccc64fa2d1b70ba68855f, type: 3}
       propertyPath: m_BoundingSphereOverride.y
@@ -54130,19 +54033,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8165394360305818878, guid: 3b59be53b4360da4d9bf0c5575c90a04, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0
+      value: 3140.8918
       objectReference: {fileID: 0}
     - target: {fileID: 8165394360305818878, guid: 3b59be53b4360da4d9bf0c5575c90a04, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0
+      value: 223.30965
       objectReference: {fileID: 0}
     - target: {fileID: 8165394360305818878, guid: 3b59be53b4360da4d9bf0c5575c90a04, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0
+      value: 206841170
       objectReference: {fileID: 0}
     - target: {fileID: 8165394360305818878, guid: 3b59be53b4360da4d9bf0c5575c90a04, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 2.3978104e+11
       objectReference: {fileID: 0}
     - target: {fileID: 8165394360305818878, guid: 3b59be53b4360da4d9bf0c5575c90a04, type: 3}
       propertyPath: m_BakingOutput.probeOcclusionLightIndex
