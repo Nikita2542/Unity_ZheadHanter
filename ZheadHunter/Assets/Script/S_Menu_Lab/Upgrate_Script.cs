@@ -170,8 +170,8 @@ public class Upgrate_Script : MonoBehaviour
                 Arm_player = Arm_player + 20;
                 Lvl_Arm_Blue = Lvl_Arm_Blue + 1;
 
-                
 
+                PlayerPrefs.SetInt("Lvl_Arm_Blue", Lvl_Arm_Blue);
                 PlayerPrefs.SetInt("sale_Arm_Blue", sale_Arm_Blue); // стоимость улучшения
                 PlayerPrefs.SetInt("Coin", coin_obmen.coin); // Деньги
                 PlayerPrefs.SetInt("Arm_player", Arm_player); // Броня 
