@@ -48289,11 +48289,14 @@ MonoBehaviour:
   Armor_Pl: {fileID: 4493774594161193030}
   player_car: {fileID: 6057955758182731001}
   health_player: 100
+  maxHealth: 100
+  pointIncreasePersecond: 0
   zombi_enemy: {fileID: 4493774594161193020}
-  damage_enemy: 3
+  damage_enemy: 8
   slider_player: {fileID: 1295106288}
   speedometr: {fileID: 4493774594161193026}
   Game_over: {fileID: 1446155759}
+  fireRate: 1
 --- !u!114 &4493774594161193026
 MonoBehaviour:
   m_ObjectHideFlags: 0

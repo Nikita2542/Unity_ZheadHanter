@@ -7,7 +7,9 @@ public class ZOMBIE_DAMAGE : MonoBehaviour
     public Armor_pl_Lvl Armor_Pl;
     public GameObject player_car;
     //public Transform respawnpoint;
-    public int health_player = 100;
+    public float health_player = 100f;
+    public float maxHealth = 100f;
+    public float pointIncreasePersecond; // через скок секунд улучшается здоровье
     public GameObject zombi_enemy;
     public int damage_enemy = 10;
     public Slider slider_player;
@@ -15,14 +17,19 @@ public class ZOMBIE_DAMAGE : MonoBehaviour
     public GameObject Game_over;
     private float nextTimeToFire = 0f;
     public float fireRate = 1f;
+    
     private void Start()
     {
-        Game_over.SetActive(false);
+     health_player = 100;
+     maxHealth = 100;
+        pointIncreasePersecond = 4f;
+
+    Game_over.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {
 
-        if(Armor_Pl.Armor_Value <= 0)
+        if (Armor_Pl.Armor_Value <= 0)
         {
             if (other.gameObject.tag == "Zombie_green" && Time.time >= nextTimeToFire)
             {
@@ -51,22 +58,50 @@ public class ZOMBIE_DAMAGE : MonoBehaviour
                 }
             }
         }
-        
+
     }
     private void Update()
     {
-        
-        
-            slider_player.value = health_player;
-        
-        
-        if(health_player <= 0)
+
+        if (health_player < 100)
         {
-            
+           Invoke("Health_regeneration", 3);
+        }
+
+
+            slider_player.value = health_player;
+
+       
+
+        if (health_player <= 0)
+        {
+
             Game_over.SetActive(true);
             Destroy(player_car);
             //player_car.transform.position = respawnpoint.position;
         }
+
+       
     }
-}
+
+    public void Health_regeneration()
+    {
+       
+        
+        health_player += pointIncreasePersecond * Time.deltaTime;
+
+
+
+
+
+
+
+
+
+        if (health_player > maxHealth)
+        {
+            health_player = 100;
+        }
+    }
+} 
 
