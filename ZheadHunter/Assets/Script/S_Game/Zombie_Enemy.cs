@@ -9,8 +9,13 @@ public class Zombie_Enemy : MonoBehaviour
     public GameObject Sliz_Green;
     public GameObject Sliz_Yellow;
     public GameObject Sliz_Red;
+    
+
+   
     public void TakeDamage_gun(float amount)
     {
+        
+        
         health_zomb -= amount;    
         if(health_zomb<= 0f)
         {

@@ -9,23 +9,22 @@ public class MouseLocked : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Rect_22 = GetComponent<RectTransform>();
+       
     }
     private void Update()
     {
-        Cursor.lockState = CursorLockMode.None;
         if (RectTransformUtility.RectangleContainsScreenPoint(Rect_22, Input.mousePosition))
         {
-
-            
-            
-               
-                Cursor.lockState = CursorLockMode.Locked; //Блокировка курсора
+            Cursor.lockState = CursorLockMode.Locked; //Блокировка курсора
             Cursor.visible = false;
-
-
-
         }
+        Cursor.lockState = CursorLockMode.None;
+        if (Input.GetKey("y"))
+        {
+            Cursor.lockState = CursorLockMode.None; //Блокировка курсора
+            Cursor.visible = true;
         }
+    }
 }
 
   
